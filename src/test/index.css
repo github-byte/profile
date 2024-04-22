@@ -1,0 +1,40 @@
+.main-div {
+  display: flex;
+  border-radius: 10px;
+  height: 100vh;
+  border: 1px solid lightgray;
+  /* background-color:; */
+}
+
+.sidebar {
+  width: 30%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 40px 20px 20px 20px;
+  color: white;
+  background-color: blueviolet;
+}
+
+.search {
+  /* padding: 20px; */
+  width: 80%;
+}
+
+.search-bar{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+}
+
+.body-div{
+    padding: 20px;
+    margin: 20px;
+    border: 2px dotted lightgray;
+}

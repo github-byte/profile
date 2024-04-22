@@ -1,13 +1,27 @@
+import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import Profile from './profile'
+import Test from './test'
+import LoggedIn from './test/loggedIn';
+import Logout from './test/logout';
+export const MainContext = React.createContext();
 
 const App = () => {
-  return (
-    <div className="App" style={{
-      backgroundImage:`url('https://shridharportfolio.netlify.app/assets/herobg-ecbfddc8.png')`, backgroundRepeat: 'no-repeat', backgroundSize:"cover", height:'100vh', backgroundColor:'navyblue'}}>
-      <Profile/>
+  const [loggedIn, setLoggedIn] = useState(false)
+  const [name, setName] = useState("")
+  const [password, setPassword] = useState("")
+  const contextValues = {
+    setLoggedIn,
+    setName,
+    name,
+    setPassword,
+    password
+  }
+  return (<MainContext.Provider value={contextValues}>
+    <div className="app">
+      {loggedIn ? <LoggedIn/> : <Logout/>}
     </div>
+  </MainContext.Provider>
   );
 }
 

@@ -1,6 +1,10 @@
-/* .App {
-  text-align: center;
-} */
+.app {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
+  /* text-align: center; */
+}
 
 .headerText {
   font-family: Poppins;

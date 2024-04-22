@@ -1,0 +1,11 @@
+.grid-main{
+    display: grid;
+    height: 300px;
+    width: 300px;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+}
+
+.item-grid{
+    border: 1px solid black;
+}
