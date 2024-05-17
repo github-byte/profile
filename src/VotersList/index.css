@@ -1,0 +1,18 @@
+.input-votes{
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-content{
+    border: 1px solid black;
+}
+
+.voter-inputs{
+    display: flex;
+    justify-content: center;
+    gap:40px
+
+}

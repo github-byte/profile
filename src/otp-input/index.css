@@ -1,0 +1,12 @@
+.input-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px
+}
+.input-boxes{
+    /* display: flex; */
+    height: 40px;
+    width: 30px;
+}

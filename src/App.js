@@ -1,27 +1,21 @@
 import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import Test from './test'
-import LoggedIn from './test/loggedIn';
-import Logout from './test/logout';
+// import Test from './test'
+// import LoggedIn from './test/loggedIn';
+// import Logout from './test/logout';
+// import BoxView from './boxView';
+// import VoterList from './VotersList';
+import OtpInput from './otp-input';
 export const MainContext = React.createContext();
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = useState(false)
-  const [name, setName] = useState("")
-  const [password, setPassword] = useState("")
-  const contextValues = {
-    setLoggedIn,
-    setName,
-    name,
-    setPassword,
-    password
-  }
-  return (<MainContext.Provider value={contextValues}>
+ 
+  return (
     <div className="app">
-      {loggedIn ? <LoggedIn/> : <Logout/>}
+      {/* <VoterList/> */}
+      <OtpInput/>
     </div>
-  </MainContext.Provider>
   );
 }
 
