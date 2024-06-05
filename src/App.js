@@ -7,6 +7,7 @@ import './App.css';
 // import BoxView from './boxView';
 // import VoterList from './VotersList';
 import OtpInput from './otp-input';
+import Timer from './otp-input/timer';
 export const MainContext = React.createContext();
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
   return (
     <div className="app">
       {/* <VoterList/> */}
-      <OtpInput/>
+      <Timer/>
     </div>
   );
 }
